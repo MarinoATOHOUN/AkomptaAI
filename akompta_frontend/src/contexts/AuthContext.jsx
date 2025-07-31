@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [token, setToken] = useState(localStorage.getItem('akompta_access_token'));
 
-  const API_BASE_URL = 'http://localhost:8000/api'; // Nouvelle URL pour Django
+  const API_BASE_URL = 'https://87d48bd25340b6.lhr.life/api'; // Nouvelle URL pour Django
 
   // Vérifier le token au chargement
   useEffect(() => {
